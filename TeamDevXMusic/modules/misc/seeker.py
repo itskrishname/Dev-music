@@ -1,0 +1,128 @@
+"""
+                      [TeamDev](https://t.me/team_x_og)
+          
+          Project Id -> 39.
+          Project Name -> TeamDev X Music
+          Project Age -> 15D+ (Updated On 05/05/2026)
+          Project Idea By -> @MR_ARMAN_08
+          Project Dev -> @MR_ARMAN_08
+          Powered By -> @Team_X_Og ( On Telegram )
+          Updates -> @TeamDevXBots ( On telegram )
+    
+    Setup Guides -> Read > README.md
+    
+          This Script Part Off https://t.me/Team_X_Og's Team.
+          Copyright ©️ 2026 TeamDev | @Team_X_Og
+          
+    • Some Quick Help
+    - Read Full README.md For Understanding The Content.
+    - If You Need Any Help Contact Us In @Team_X_Og's Group
+    
+         Compatible In BotApi 9.5 Fully
+         Build For BotApi 9.5
+         We'll Keep Update This Repo If We Got 30+ Stars In One Month Of Release.
+"""
+
+# Copyright (C) 2025 by @MR_ARMAN_08 @ Github, < https://github.com/justfortestingnothibghere >
+# All rights reserved. © TeamDevXMusic
+
+"""
+TeamDevXMusic is a Telegram Music Bot by @MR_ARMAN_08.
+Copyright (c) 2026 ~ Present Team TeamDevXMusic <https://github.com/justfortestingnothibghere>
+
+This program is "Ristiricted" software: Don't Modify, Redistribute Or Sell This Project Proving As Your Project
+TeamDev Will Take Action If They Find Any unauthorised usages.
+"""
+
+
+import asyncio
+
+import contextlib
+from pyrogram.types import InlineKeyboardMarkup
+
+from strings import get_string
+from TeamDevXMusic.helpers import db
+from TeamDevXMusic.toolkit.datastore import get_active_chats, get_lang, is_music_playing
+from TeamDevXMusic.toolkit.fmt import seconds_to_min
+from TeamDevXMusic.toolkit.panels import stream_markup_timer, telegram_markup_timer
+
+from ..admins.callback import wrong
+
+checker = {}
+
+
+async def timer():
+    while not await asyncio.sleep(1):
+        active_chats = await get_active_chats()
+        for chat_id in active_chats:
+            if not await is_music_playing(chat_id):
+                continue
+            playing = db.get(chat_id)
+            if not playing:
+                continue
+            file_path = playing[0]["file"]
+            if "index_" in file_path or "live_" in file_path:
+                continue
+            duration = int(playing[0]["seconds"])
+            if duration == 0:
+                continue
+            db[chat_id][0]["played"] += 1
+
+
+asyncio.create_task(timer())
+
+
+async def markup_timer():
+    while not await asyncio.sleep(4):
+        active_chats = await get_active_chats()
+        for chat_id in active_chats:
+            try:
+                if not await is_music_playing(chat_id):
+                    continue
+                playing = db.get(chat_id)
+                if not playing:
+                    continue
+                duration_seconds = int(playing[0]["seconds"])
+                if duration_seconds == 0:
+                    continue
+                try:
+                    mystic = playing[0]["mystic"]
+                    markup = playing[0]["markup"]
+                except Exception:
+                    continue
+                with contextlib.suppress(Exception):
+                    check = wrong[chat_id][mystic.id]
+                    if check is False:
+                        continue
+                try:
+                    language = await get_lang(chat_id)
+                    _ = get_string(language)
+                except Exception:
+                    _ = get_string("en")
+                try:
+                    buttons = (
+                        stream_markup_timer(
+                            _,
+                            playing[0]["vidid"],
+                            chat_id,
+                            seconds_to_min(playing[0]["played"]),
+                            playing[0]["dur"],
+                        )
+                        if markup == "stream"
+                        else telegram_markup_timer(
+                            _,
+                            chat_id,
+                            seconds_to_min(playing[0]["played"]),
+                            playing[0]["dur"],
+                        )
+                    )
+                    await mystic.edit_reply_markup(
+                        reply_markup=InlineKeyboardMarkup(buttons)
+                    )
+                except Exception:
+                    continue
+            except Exception:
+                continue
+
+
+asyncio.create_task(markup_timer())
