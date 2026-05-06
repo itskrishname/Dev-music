@@ -113,14 +113,9 @@ class YouTubeAPI:
         if "&" in link:
             link = link.split("&")[0]
         results = VideosSearch(link, limit=1)
-        title = "Unknown Title"
-        duration_min = "0:00"
-        duration_sec = 0
-        thumbnail = ""
-        vidid = ""
-        for result in (await results.next()).get("result", []):
-            title = result.get("title", "Unknown Title")
-            duration_min = result.get("duration", "0:00")
+        for result in (await results.next())["result"]:
+            title = result["title"]
+            duration_min = result["duration"]
             thumbnail = result["thumbnails"][0]["url"].split("?")[0]
             vidid = result["id"]
             if str(duration_min) == "None":
@@ -135,9 +130,8 @@ class YouTubeAPI:
         if "&" in link:
             link = link.split("&")[0]
         results = VideosSearch(link, limit=1)
-        title = "Unknown Title"
-        for result in (await results.next()).get("result", []):
-            title = result.get("title", "Unknown Title")
+        for result in (await results.next())["result"]:
+            title = result["title"]
         return title
 
     async def duration(self, link: str, videoid: Union[bool, str] = None):
@@ -146,9 +140,8 @@ class YouTubeAPI:
         if "&" in link:
             link = link.split("&")[0]
         results = VideosSearch(link, limit=1)
-        duration = "0:00"
-        for result in (await results.next()).get("result", []):
-            duration = result.get("duration", "0:00")
+        for result in (await results.next())["result"]:
+            duration = result["duration"]
         return duration
 
     async def thumbnail(self, link: str, videoid: Union[bool, str] = None):
@@ -157,8 +150,7 @@ class YouTubeAPI:
         if "&" in link:
             link = link.split("&")[0]
         results = VideosSearch(link, limit=1)
-        thumbnail = ""
-        for result in (await results.next()).get("result", []):
+        for result in (await results.next())["result"]:
             thumbnail = result["thumbnails"][0]["url"].split("?")[0]
         return thumbnail
 
@@ -204,14 +196,9 @@ class YouTubeAPI:
         if "&" in link:
             link = link.split("&")[0]
         results = VideosSearch(link, limit=1)
-        title = "Unknown Title"
-        duration_min = "0:00"
-        vidid = ""
-        yturl = link
-        thumbnail = ""
-        for result in (await results.next()).get("result", []):
-            title = result.get("title", "Unknown Title")
-            duration_min = result.get("duration", "0:00")
+        for result in (await results.next())["result"]:
+            title = result["title"]
+            duration_min = result["duration"]
             vidid = result["id"]
             yturl = result["link"]
             thumbnail = result["thumbnails"][0]["url"].split("?")[0]
