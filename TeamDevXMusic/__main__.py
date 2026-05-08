@@ -84,11 +84,11 @@ async def init() -> None:
     except Exception:
         pass
     await TeamDevXMusic.decorators()
-    LOGGER("TeamDevXMusic").info("TeamDevXMusic Bot Started Successfully")
+    LOGGER("TeamDevXMusic").info("Music Bot Started Successfully")
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("TeamDevXMusic").info("Stopping TeamDevXMusic Bot...")
+    LOGGER("TeamDevXMusic").info("Stopping Music Bot...")
 
 
 if __name__ == "__main__":
