@@ -257,7 +257,7 @@ async def _download_cover(url: str, path: str) -> None:
                     await f.write(await r.read())
 
 
-async def gen_thumb(videoid: str, requester: str = "@MR_ARMAN_08") -> str:
+async def gen_thumb(videoid: str, requester: str = "@Lord_Vasudev_Krishna") -> str:
     out_path   = f"cache/{videoid}.png"
     cover_path = f"cache/thumb{videoid}.png"
 
