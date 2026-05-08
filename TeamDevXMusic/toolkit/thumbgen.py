@@ -225,7 +225,7 @@ def _build_thumbnail(
               fill=(*CYAN_D, 150), width=1)
     draw.text((RX + 80, bcy), "Powered By ",  fill=GREY, font=fnt_brand, anchor="lm")
     pw = draw.textlength("Powered By ", font=fnt_brand)
-    draw.text((RX + 80 + pw, bcy), "@TeamDevXBots", fill=CYAN, font=fnt_brand, anchor="lm")
+    draw.text((RX + 80 + pw, bcy), "@SECRECT_BOT_UPDATES", fill=CYAN, font=fnt_brand, anchor="lm")
 
     return canvas.convert("RGB")
 
@@ -289,5 +289,5 @@ async def gen_thumb(videoid: str, requester: str = "@MR_ARMAN_08") -> str:
     return out_path
 
 
-async def gen_qthumb(videoid: str, requester: str = "@MR_ARMAN_08") -> str:
+async def gen_qthumb(videoid: str, requester: str = "@Lord_Vasudev_Krishna") -> str:
     return await gen_thumb(videoid, requester)
