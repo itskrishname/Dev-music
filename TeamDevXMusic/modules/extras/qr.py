@@ -71,10 +71,10 @@ async def mr_d_qr_handler(_, message: Message):
         qr_image = TeamDev_generate_qr(input_text)
         await message.reply_photo(
             qr_image,
-            caption="» Here's your QR Code\n\n**Powered by @Team_X_Og**",
+            caption="» Here's your QR Code\n\n**Powered by @SECRECT_BOT_UPDATES**",
         )
     else:
         await message.reply_text(
             "» Please provide the text for the QR code.\n\n"
-            "Example: `/qr https://t.me/Team_X_Og`"
+            "Example: `/qr https://t.me/Lord_Vasudev_Krishna`"
         )
