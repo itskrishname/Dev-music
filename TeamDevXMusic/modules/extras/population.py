@@ -78,7 +78,7 @@ async def TeamDev_population_command(_, message: Message):
                 f"**Region:** {region} — {subregion}\n"
                 f"**Population:** {population:,}\n"
                 f"**Area:** {area:,} km²\n\n"
-                f"_Powered by @Team_X_Og_"
+                f"_Powered by @SECRECT_BOT_UPDATES"
             )
         else:
             text = "» Country information could not be fetched."
