@@ -73,7 +73,7 @@ async def TeamDev_waifu(_, message: Message):
             caption=(
                 f"» Here's your waifu~\n\n"
                 f"Request by {message.from_user.mention}\n"
-                f"Powered by @Team_X_Og"
+                f"Powered by @SECRECT_BOT_UPDATES"
             ),
         )
     else:
