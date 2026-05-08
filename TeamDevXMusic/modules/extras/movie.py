@@ -80,7 +80,7 @@ async def TeamDev_get_movie_info(query: str) -> str:
             f"» **Top Cast:** {actors}\n"
             f"» **Box Office:** {revenue_str}\n\n"
             f"» **Overview:**\n{overview}\n\n"
-            f"_Powered by @Team_X_Og_"
+            f"_Powered by @SECRECT_BOT_UPDATES"
         )
 
 
