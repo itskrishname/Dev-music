@@ -217,10 +217,10 @@ main() {
     clear
     pprint "\n╔════════════════════════════════════╗\n" "cpurple"
     pprint "║                                    ║\n" "cpurple"
-    pprint "║    TeamDev X Music  •  Setup       ║\n" "cpurple"
+    pprint "║           Music  •  Setup       ║\n" "cpurple"
     pprint "║                                    ║\n" "cpurple"
-    pprint "║    Dev    →  @MR_ARMAN_08          ║\n" "cpurple"
-    pprint "║    Team   →  @Team_X_Og            ║\n" "cpurple"
+    pprint "║    Dev    →  @Lord_Vasudev_Krishna          ║\n" "cpurple"
+    pprint "║    Team   →  @Lord_Vasudev_Krishna            ║\n" "cpurple"
     pprint "║                                    ║\n" "cpurple"
     pprint "╚════════════════════════════════════╝\n\n" "cpurple"
 
@@ -261,8 +261,8 @@ main() {
     pprint "python3 -m TeamDevXMusic\n" "cgreen"
     pprint "→ Run in background: " "cyellow"
     pprint "nohup python3 -m TeamDevXMusic &> teamdev.log &\n\n" "cgreen"
-    pprint "  Need help?  →  https://t.me/Team_X_Og\n" "ccyan"
-    pprint "  Updates     →  https://t.me/TeamDevXBots\n\n" "ccyan"
+    pprint "  Need help?  →  https://t.me/Lord_Vasudev_Krishna\n" "ccyan"
+    pprint "  Updates     →  https://t.me/SECRECT_BOT_UPDATES\n\n" "ccyan"
 }
 
 main
