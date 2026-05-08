@@ -112,7 +112,7 @@ def TeamDev_format_domain_info(info) -> str:
         f"**ɪᴘ ᴀᴅᴅʀᴇss**: `{ip}`\n"
         f"**ʟᴏᴄᴀᴛɪᴏɴ**: {location}\n"
         f"**ɴᴀᴍᴇsᴇʀᴠᴇʀs**: {nameservers}\n\n"
-        f"_Powered by @Team_X_Og_"
+        f"_Powered by @SECRECT_BOT_UPDATES"
     )
 
 
