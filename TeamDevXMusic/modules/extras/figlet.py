@@ -70,7 +70,7 @@ def TeamDev_render_figlet(text: str, font: str = "standard") -> str:
 async def mr_d_figlet_command(_, message: Message):
     if len(message.command) < 2:
         return await message.reply_text(
-            "» Please provide some text.\nExample: `/figlet TeamDev`"
+            "» Please provide some text.\nExample: `/figlet Sᴇᴄʀᴇᴄᴛ 𝐁ᴏᴛ 𝐔ᴘᴅᴀᴛᴇs"
         )
 
     text = " ".join(message.command[1:])
@@ -85,7 +85,7 @@ async def mr_d_figlet_command(_, message: Message):
     ])
 
     await message.reply_text(
-        f"```\n{rendered}\n```\nFont: {font} | Powered by @Team_X_Og",
+        f"```\n{rendered}\n```\nFont: {font} | Powered by @SECRECT_BOT_UPDATES",
         reply_markup=keyboard,
     )
 
@@ -102,7 +102,7 @@ async def team_x_og_figlet_regen(_, query: CallbackQuery):
 
     try:
         await query.message.edit_text(
-            f"```\n{rendered}\n```\nFont: {font} | Powered by @Team_X_Og",
+            f"```\n{rendered}\n```\nFont: {font} | Powered by @SECRECT_BOT_UPDATES",
             reply_markup=keyboard,
         )
     except Exception:
