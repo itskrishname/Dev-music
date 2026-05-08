@@ -316,7 +316,7 @@ async def welcome(client, message: Message):
 @app.on_message(commandpro(["/alive", "TeamDev"]))
 async def alive(client, message: Message):
     await message.reply_photo(
-        photo="https://graph.org/file/a642be9214ef87d401de6-319bfe9ae1703e55bf.jpg",
+        photo="https://files.catbox.moe/6tecgk.jpg",
         caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ ʜᴇʟʟᴏ, ᴛᴇᴀᴍᴅᴇᴠ ɪs ᴡᴏʀᴋɪɴɢ ᴀɴᴅ ғᴜɴᴄᴛɪᴏɴɪɴɢ ᴘʀᴏᴘᴇʀʟʏ\n✪ ᴛʜᴀɴᴋs ᴛᴏ ᴛᴇᴀᴍᴅᴇᴠ ᴛᴇᴀᴍ 🔥 \.\.\n\n┏━━━━━━━━━━━━━━━━━┓\n┣★ ᴏᴡɴᴇʀ    : [ᴀʀᴍᴀɴ](https://t.me/MR_ARMAN_08)\n┣★ ᴜᴘᴅᴀᴛᴇs › : [ᴛᴇᴀᴍᴅᴇᴠ ᴜᴘᴅᴀᴛᴇs](https://t.me/TeamDevXBots)┓\n┣★ ʀᴇᴘᴏ › : [ᴛᴇᴀᴍᴅᴇᴠ ʀᴇᴘᴏ](https://github.com/justfortestingnothibghere/TeamDev-Music)\n┗━━━━━━━━━━━━━━━━━┛\n\n💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ\nᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/MR_ARMAN_08) ᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ sᴛᴀʀ ᴏᴜʀ ᴘʀᴏᴊᴇᴄᴛ ...\n\n━━━━━━━━━━━━━━━━━━━━━━━━""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🌼 ᴄʜᴀᴛ 💮", url=config.SUPPORT_GROUP)]]
@@ -333,7 +333,7 @@ async def verify(client, message: Message):
         return
     await add_served_user(message.from_user.id)
     await message.reply_photo(
-        photo="https://graph.org/file/a642be9214ef87d401de6-319bfe9ae1703e55bf.jpg",
+        photo="https://files.catbox.moe/6tecgk.jpg",
         caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ **ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴ** 🎉\n✪ ɴᴏᴡ ʏᴏᴜ ᴀʀᴇ ᴠᴇʀɪғɪᴇᴅ ᴍᴇᴍʙᴇʀ ɢᴏ ʙᴀᴄᴋ ᴀɴᴅ ᴇɴᴊᴏʏ ᴏᴜʀ sᴇʀᴠɪᴄᴇ ᴀɴᴅ ᴘʟᴀʏ ᴍᴜsɪᴄ 🌼 ..\n\n━━━━━━━━━━━━━━━━━━━━━━━━""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🌼 ᴄʜᴀᴛ 💮", url=config.SUPPORT_GROUP)]]
