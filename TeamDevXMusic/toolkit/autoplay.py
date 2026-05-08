@@ -171,7 +171,7 @@ async def TeamDev_trigger_autoplay(client, chat_id: int, last_vidid: str):
 
         notify_msg = await app.send_message(
             original_chat_id,
-            f"**AutoPlay** | Fetching next track…\n🎵 **{title[:50]}**\n\nPowered by @Team_X_Og",
+            f"**AutoPlay** | Fetching next track…\n🎵 **{title[:50]}**\n\nPowered by @SECRECT_BOT_UPDATES",
         )
 
         try:
@@ -227,7 +227,7 @@ async def TeamDev_trigger_autoplay(client, chat_id: int, last_vidid: str):
                 f"🎵 **[{title[:40]}](https://t.me/{app.username}?start=info_{vidid})**\n"
                 f"⏱ **Duration:** {duration_min}\n"
                 f"🤖 **Queued by:** AutoPlay\n\n"
-                f"Powered by @Team_X_Og"
+                f"Powered by @SECRECT_BOT_UPDATES"
             ),
             reply_markup=InlineKeyboardMarkup(button),
         )
