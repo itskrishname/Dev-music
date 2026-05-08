@@ -79,7 +79,7 @@ async def mr_d_pypi_command(_, message: Message):
             f"» **Version:** `{info['version']}`\n"
             f"» **Description:** {info.get('summary') or 'No description.'}\n"
             f"» **URL:** [Click here]({project_url})\n\n"
-            f"_Powered by @Team_X_Og_"
+            f"_Powered by @SECRECT_BOT_UPDATES"
         )
         await message.reply_text(text, parse_mode=ParseMode.MARKDOWN)
     else:
