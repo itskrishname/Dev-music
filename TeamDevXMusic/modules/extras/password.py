@@ -73,7 +73,7 @@ async def mr_d_genpassword(_, message: Message):
     await message.reply_text(
         f"» **Generated Password ({length} chars):**\n\n`{password}`\n\n"
         f"⚠️ _Do not share this password with anyone._\n"
-        f"Powered by @Team_X_Og",
+        f"Powered by @SECRECT_BOT_UPDATES",
         reply_markup=keyboard,
         quote=True,
     )
@@ -90,7 +90,7 @@ async def team_x_og_genpw_regen(_, query):
         await query.message.edit_text(
             f"» **Generated Password ({length} chars):**\n\n`{password}`\n\n"
             f"⚠️ _Do not share this password with anyone._\n"
-            f"_Powered by @Team_X_Og_",
+            f"_Powered by @SECRECT_BOT_UPDATES_",
             reply_markup=keyboard,
         )
     except Exception:
