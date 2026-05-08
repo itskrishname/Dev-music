@@ -58,7 +58,7 @@ async def TeamDev_truth(_, message: Message):
         if res.status_code == 200:
             question = res.json().get("question", "No question found.")
             await message.reply_text(
-                f"» **Truth:**\n\n{question}\n\n_Powered by @Team_X_Og_",
+                f"» **Truth:**\n\n{question}\n\n_Powered by @SECRECT_BOT_UPDATES",
                 parse_mode=ParseMode.MARKDOWN,
             )
         else:
@@ -76,7 +76,7 @@ async def mr_d_dare(_, message: Message):
         if res.status_code == 200:
             question = res.json().get("question", "No question found.")
             await message.reply_text(
-                f"» **Dare:**\n\n{question}\n\n_Powered by @Team_X_Og_",
+                f"» **Dare:**\n\n{question}\n\n_Powered by @SECRECT_BOT_UPDATES",
                 parse_mode=ParseMode.MARKDOWN,
             )
         else:
