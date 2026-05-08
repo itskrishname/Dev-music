@@ -92,7 +92,7 @@ async def TeamDev_groupdata(_, message: Message):
         f"» **Linked Channel:** {linked_str}\n"
         f"» **Created:** {created_str}\n\n"
         f"» **Description:**\n{description}\n\n"
-        f"_Fetched in {elapsed}ms | Powered by @Team_X_Og_"
+        f"_Fetched in {elapsed}ms | Powered by @SECRECT_BOT_UPDATES"
     )
 
     msg = await message.reply_text(text)
