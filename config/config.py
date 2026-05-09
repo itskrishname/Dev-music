@@ -131,67 +131,67 @@ clean = {}
 autoclean = []
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://graph.org/file/a642be9214ef87d401de6-319bfe9ae1703e55bf.jpg"
+    "START_IMG_URL", "https://files.catbox.moe/m36fkf.jpg"
 )
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://graph.org/file/a642be9214ef87d401de6-319bfe9ae1703e55bf.jpg",
+    "https://files.catbox.moe/m36fkf.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
     "PLAYLIST_IMG_URL",
-    "https://graph.org/file/a642be9214ef87d401de6-319bfe9ae1703e55bf.jpg",
+    "https://files.catbox.moe/m36fkf.jpg",
 )
 
 GLOBAL_IMG_URL = getenv(
     "GLOBAL_IMG_URL",
-    "https://graph.org/file/a642be9214ef87d401de6-319bfe9ae1703e55bf.jpg",
+    "https://files.catbox.moe/m36fkf.jpg",
 )
 
 STATS_IMG_URL = getenv(
     "STATS_IMG_URL",
-    "https://graph.org/file/a642be9214ef87d401de6-319bfe9ae1703e55bf.jpg",
+    "https://files.catbox.moe/m36fkf.jpg",
 )
 
 TELEGRAM_AUDIO_URL = getenv(
     "TELEGRAM_AUDIO_URL",
-    "https://graph.org/file/a642be9214ef87d401de6-319bfe9ae1703e55bf.jpg",
+    "https://files.catbox.moe/m36fkf.jpg",
 )
 
 TELEGRAM_VIDEO_URL = getenv(
     "TELEGRAM_VIDEO_URL",
-    "https://graph.org/file/a642be9214ef87d401de6-319bfe9ae1703e55bf.jpg",
+    "https://files.catbox.moe/m36fkf.jpg",
 )
 
 STREAM_IMG_URL = getenv(
     "STREAM_IMG_URL",
-    "https://graph.org/file/a642be9214ef87d401de6-319bfe9ae1703e55bf.jpg",
+    "https://files.catbox.moe/m36fkf.jpg",
 )
 
 SOUNCLOUD_IMG_URL = getenv(
     "SOUNCLOUD_IMG_URL",
-    "https://graph.org/file/a642be9214ef87d401de6-319bfe9ae1703e55bf.jpg",
+    "https://files.catbox.moe/m36fkf.jpg",
 )
 
 YOUTUBE_IMG_URL = getenv(
     "YOUTUBE_IMG_URL",
-    "https://graph.org/file/a642be9214ef87d401de6-319bfe9ae1703e55bf.jpg",
+    "https://files.catbox.moe/m36fkf.jpg",
 )
 
 SPOTIFY_ARTIST_IMG_URL = getenv(
     "SPOTIFY_ARTIST_IMG_URL",
-    "https://graph.org/file/a642be9214ef87d401de6-319bfe9ae1703e55bf.jpgg",
+    "https://files.catbox.moe/m36fkf.jpg",
 )
 
 SPOTIFY_ALBUM_IMG_URL = getenv(
     "SPOTIFY_ALBUM_IMG_URL",
-    "https://graph.org/file/a642be9214ef87d401de6-319bfe9ae1703e55bf.jpg",
+    "https://files.catbox.moe/m36fkf.jpg",
 )
 
 SPOTIFY_PLAYLIST_IMG_URL = getenv(
     "SPOTIFY_PLAYLIST_IMG_URL",
-    "https://graph.org/file/a642be9214ef87d401de6-319bfe9ae1703e55bf.jpg",
+    "https://files.catbox.moe/m36fkf.jpg",
 )
 
 
@@ -229,7 +229,7 @@ if GITHUB_REPO and not re.match("(?:http|https)://", GITHUB_REPO):
 
 if (
     PING_IMG_URL
-    and PING_IMG_URL != "https://graph.org/file/a642be9214ef87d401de6-319bfe9ae1703e55bf.jpg"
+    and PING_IMG_URL != "https://files.catbox.moe/m36fkf.jpg"
     and not re.match("(?:http|https)://", PING_IMG_URL)
 ):
     print(
@@ -239,7 +239,7 @@ if (
 
 if (
     PLAYLIST_IMG_URL
-    and PLAYLIST_IMG_URL != "https://graph.org/file/a642be9214ef87d401de6-319bfe9ae1703e55bf.jpg"
+    and PLAYLIST_IMG_URL != "https://files.catbox.moe/m36fkf.jpg"
     and not re.match("(?:http|https)://", PLAYLIST_IMG_URL)
 ):
     print(
@@ -249,7 +249,7 @@ if (
 
 if (
     GLOBAL_IMG_URL
-    and GLOBAL_IMG_URL != "https://graph.org/file/a642be9214ef87d401de6-319bfe9ae1703e55bf.jpg"
+    and GLOBAL_IMG_URL != "https://files.catbox.moe/m36fkf.jpg"
     and not re.match("(?:http|https)://", GLOBAL_IMG_URL)
 ):
     print(
@@ -259,7 +259,7 @@ if (
 
 
 if STATS_IMG_URL and (
-    STATS_IMG_URL != "https://graph.org/file/a642be9214ef87d401de6-319bfe9ae1703e55bf.jpg"
+    STATS_IMG_URL != "https://files.catbox.moe/m36fkf.jpg"
     and not re.match("(?:http|https)://", STATS_IMG_URL)
 ):
     print(
@@ -270,7 +270,7 @@ if STATS_IMG_URL and (
 
 if (
     TELEGRAM_AUDIO_URL
-    and TELEGRAM_AUDIO_URL != "https://graph.org/file/a642be9214ef87d401de6-319bfe9ae1703e55bf.jpg"
+    and TELEGRAM_AUDIO_URL != "https://files.catbox.moe/m36fkf.jpg"
     and not re.match("(?:http|https)://", TELEGRAM_AUDIO_URL)
 ):
     print(
@@ -281,7 +281,7 @@ if (
 
 if (
     STREAM_IMG_URL
-    and STREAM_IMG_URL != "https://graph.org/file/a642be9214ef87d401de6-319bfe9ae1703e55bf.jpg"
+    and STREAM_IMG_URL != "https://files.catbox.moe/m36fkf.jpg"
     and not re.match("(?:http|https)://", STREAM_IMG_URL)
 ):
     print(
@@ -292,7 +292,7 @@ if (
 
 if (
     SOUNCLOUD_IMG_URL
-    and SOUNCLOUD_IMG_URL != "https://graph.org/file/a642be9214ef87d401de6-319bfe9ae1703e55bf.jpg"
+    and SOUNCLOUD_IMG_URL != "https://files.catbox.moe/m36fkf.jpg"
     and not re.match("(?:http|https)://", SOUNCLOUD_IMG_URL)
 ):
     print(
@@ -302,7 +302,7 @@ if (
 
 if (
     YOUTUBE_IMG_URL
-    and YOUTUBE_IMG_URL != "https://graph.org/file/a642be9214ef87d401de6-319bfe9ae1703e55bf.jpg"
+    and YOUTUBE_IMG_URL != "https://files.catbox.moe/m36fkf.jpg"
     and not re.match("(?:http|https)://", YOUTUBE_IMG_URL)
 ):
     print(
@@ -313,7 +313,7 @@ if (
 
 if (
     TELEGRAM_VIDEO_URL
-    and TELEGRAM_VIDEO_URL != "https://graph.org/file/a642be9214ef87d401de6-319bfe9ae1703e55bf.jpg"
+    and TELEGRAM_VIDEO_URL != "https://files.catbox.moe/m36fkf.jpg"
     and not re.match("(?:http|https)://", TELEGRAM_VIDEO_URL)
 ):
     print(
