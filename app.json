@@ -39,12 +39,12 @@
       },        
       "MONGO_DB_URI": {
         "description": "Mongo DB URL",
-        "value": "",
+        "value": "mongodb+srv://raj:krishna@cluster0.eq8xrjs.mongodb.net/",
         "required": true
       },
       "MUSIC_BOT_NAME": {
         "description": "A name for your Music Bot.",
-        "value": "",
+        "value": "𝐍ᴏᴇʟᴀ 𝝌 𝐌ᴜsɪᴄ ♪",
         "required": true
       },
       "STRING_SESSION": {
@@ -64,12 +64,12 @@
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/justfortestingnothibghere/TeamDevXMusic",
+        "value": "https://github.com/itskrishname/Dev-music",
         "required": false
       },
       "LOG_GROUP_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
-        "value": "",
+        "value": "-1003025845581",
         "required": true
       },
       "COOKIES": {
