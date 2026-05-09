@@ -66,15 +66,15 @@ BOT_ID = getenv("BOT_ID")
 
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/justfortestingnothibghere/TeamDevXMusic")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/itskrishname/Dev-music")
 
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/TeamDevXBots")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/SECRECT_BOT_UPDATES")
 
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/Team_X_Og")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/Lord_Vasudev_Krishna")
 
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False")
 
@@ -92,7 +92,7 @@ YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "3"))
 
 TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/justfortestingnothibghere/TeamDevXMusic")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/Lord_Vasudev_Krishna")
 
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
 
