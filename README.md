@@ -179,7 +179,7 @@ cookies/
   └── cookies.txt    <-- Do NOT edit, replace, or delete. Leave as default.
 ```
 
-> If you are facing playback issues, do **not** touch the cookies. Contact support at [@Team_X_Og](https://t.me/Team_X_Og) instead.
+> If you are facing playback issues, do **not** touch the cookies. Contact support at [@SECRECT_BOT_UPDATES](https://t.me/Team_X_Og) instead.
 
 ---
 
@@ -326,7 +326,7 @@ pip install -r requirements.txt
 
 | Platform | Link |
 |----------|------|
-| Support Group | [@Team_X_Og](https://t.me/Team_X_Og) |
+| Support Group | [@SECRECT_BOT_UPDATES](https://t.me/Team_X_Og) |
 | Updates Channel | [@TeamDevXBots](https://t.me/TeamDevXBots) |
 | Developer | [@MR_ARMAN_08](https://t.me/MR_ARMAN_08) |
 
@@ -341,7 +341,7 @@ This project is licensed under the **GNU General Public License v3.0** — see t
 **Developer & Maintainer:** [Arman](https://t.me/MR_ARMAN_08) ([@MR_ARMAN_08](https://t.me/MR_ARMAN_08))  
 **Team:** [TeamDev](https://t.me/Team_X_Og)
 
-> This project is part of [@Team_X_Og](https://t.me/Team_X_Og)'s ecosystem.  
+> This project is part of [@SECRECT_BOT_UPDATES](https://t.me/Team_X_Og)'s ecosystem.
 > Do **not** redistribute or resell this project as your own.  
 > Unauthorized usage will result in action by TeamDev.
 
