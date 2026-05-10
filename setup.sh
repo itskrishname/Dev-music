@@ -8,11 +8,11 @@
 #          Project Age    -> 15D+ (Updated On 05/05/2026)
 #          Idea By        -> @MR_ARMAN_08
 #          Dev By         -> @MR_ARMAN_08
-#          Powered By     -> @Team_X_Og ( On Telegram )
+#          Powered By     -> @SECRECT_BOT_UPDATES ( On Telegram )
 #          Updates        -> @TeamDevXBots ( On Telegram )
 #
 #          This Script Part Off https://t.me/Team_X_Og's Team.
-#          Copyright (c) 2026 TeamDev | @Team_X_Og
+#          Copyright (c) 2026 TeamDev | @SECRECT_BOT_UPDATES
 # ================================================================
 
 cred='\033[0;31m'

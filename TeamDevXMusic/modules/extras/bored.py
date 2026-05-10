@@ -6,17 +6,17 @@
           Project Age -> 15D+ (Updated On 05/05/2026)
           Project Idea By -> @MR_ARMAN_08
           Project Dev -> @MR_ARMAN_08
-          Powered By -> @Team_X_Og ( On Telegram )
+          Powered By -> @SECRECT_BOT_UPDATES ( On Telegram )
           Updates -> @TeamDevXBots ( On telegram )
     
     Setup Guides -> Read > README.md
     
           This Script Part Off https://t.me/Team_X_Og's Team.
-          Copyright ©️ 2026 TeamDev | @Team_X_Og
+          Copyright ©️ 2026 TeamDev | @SECRECT_BOT_UPDATES
           
     • Some Quick Help
     - Read Full README.md For Understanding The Content.
-    - If You Need Any Help Contact Us In @Team_X_Og's Group
+    - If You Need Any Help Contact Us In @SECRECT_BOT_UPDATES's Group
     
          Compatible In BotApi 9.5 Fully
          Build For BotApi 9.5
@@ -61,7 +61,7 @@ async def mr_d_bored_command(_, message: Message):
         activity = resp.json().get("activity")
         if activity:
             await message.reply_text(
-                f"» **Feeling bored?**\n\n» **Try this:** `{activity}`\n\nPowered by @Team_X_Og",
+                f"» **Feeling bored?**\n\n» **Try this:** `{activity}`\n\nPowered by @SECRECT_BOT_UPDATES",
                 parse_mode=ParseMode.MARKDOWN,
             )
         else:
