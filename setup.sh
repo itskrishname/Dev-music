@@ -206,7 +206,7 @@ STRING_SESSION4=
 STRING_SESSION5=
 GIT_TOKEN=$git_token
 UPSTREAM_REPO=https://github.com/justfortestingnothibghere/TeamDev-Music
-UPSTREAM_BRANCH=main
+UPSTREAM_BRANCH=fix-teamxog-replacement-and-pytgcalls-bug-494525827456582041
 COOKIES=
 EOF
 

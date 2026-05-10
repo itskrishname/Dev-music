@@ -68,7 +68,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
 UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/itskrishname/Dev-music")
 
-UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
+UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "fix-teamxog-replacement-and-pytgcalls-bug-494525827456582041")
 
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
